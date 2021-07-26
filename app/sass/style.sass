@@ -1,0 +1,343 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+.container-fluid 
+	width: 1590px 
+	max-width: 82.813vw
+	padding-left: 0 
+	padding-right: 0
+a,
+a:hover 
+	text-decoration: none
+ul 
+	list-style: none
+	padding: 0 
+	margin: 0
+.english-content
+	font-family: 'Futura', sans-serif
+	font-weight: 400
+.section-title 
+	font-size: 36px
+	color: $primary-color
+//end global style
+
+//start header style
+.header 
+	padding-top: 50px 
+	padding-bottom: 50px
+	background-color: $pink
+	background-image: url('../img/lines.png')
+	background-repeat: no-repeat
+	background-size: 6.406vw
+	background-position: top 60px right
+	.container-fluid 
+		display: flex 
+		justify-content: space-between 
+		align-items: center
+.header__leng
+	a 
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		color: #fff 
+		text-decoration: none
+		background: $primary-color
+		width: 49px 
+		height: 49px 
+		border-radius: 50%
+		font-size: 26px
+		margin-bottom: 40px
+.header__content
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+.menu 
+	ul 
+		display: flex
+		li 
+			margin-left: 135px
+			a 
+				font-size: 36px
+				color: $primary-color
+.logo 
+	img 
+		width: 200px
+//end header style
+
+//start slick style
+.slick-slider
+	position: relative
+	display: block
+	box-sizing: border-box
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-webkit-touch-callout: none
+	-khtml-user-select: none
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	-webkit-tap-highlight-color: transparent
+.slick-list
+	position: relative
+	display: block
+	overflow: hidden
+	margin: 0
+	padding: 0
+.slick-list:focus
+	outline: none
+.slick-list.dragging
+	cursor: pointer
+	cursor: hand
+.slick-slider .slick-track,
+.slick-slider .slick-list
+	-webkit-transform: translate3d(0, 0, 0)
+	-moz-transform: translate3d(0, 0, 0)
+	-ms-transform: translate3d(0, 0, 0)
+	-o-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+.slick-track
+	position: relative
+	top: 0
+	left: 0
+	display: block
+	margin-left: auto
+	margin-right: auto
+.slick-track:before,
+.slick-track:after
+	display: table
+	content: ''
+.slick-track:after
+	clear: both
+.slick-loading .slick-track
+	visibility: hidden
+.slick-slide
+	display: none
+	float: left
+	height: 100%
+	min-height: 1px
+[dir='rtl'] .slick-slide
+	float: right
+.slick-slide img
+	display: block
+.slick-slide.slick-loading img
+	display: none
+.slick-slide.dragging img
+	pointer-events: none
+.slick-initialized .slick-slide
+	display: block
+.slick-loading .slick-slide
+	visibility: hidden
+.slick-vertical .slick-slide
+	display: block
+	height: auto
+	border: 1px solid transparent
+.slick-arrow.slick-hidden
+	display: none
+//end slick style
+
+//start galery style
+.galery
+	background: $blue
+	//display: flex 
+	//justify-content: flex-end
+	position: relative
+	.container-fluid 
+		min-height: 100%
+		position: absolute
+		top: 0 
+		left: 50%
+		transform: translateX(-50%)
+.galery__title 
+	padding-top: 7.552vw
+	font-size: 75px
+	line-height: 1
+	text-transform: uppercase
+	color: $primary-color
+.slider
+	//width: 58vw
+	position: absolute 
+	top: 0 
+	right: 0
+	box-sizing: border-box
+	.slider-item
+		img 
+			width: 100%
+			//min-height: 100%
+.slick-dots
+	display: flex
+	justify-content: center
+	width: 100%
+	position: absolute 
+	left: 0
+	padding-top: 50px
+	li 
+		border: 1px solid $primary-color
+		margin: 0 9px
+		border-radius: 50px
+		width: 30px 
+		height: 30px
+		display: flex 
+		justify-content: center 
+		align-items: center
+		cursor: pointer
+		button 
+			border: none
+			font-size: 0
+			padding: 0
+			width: 18px 
+			height: 18px 
+			border-radius: 50%
+			display: block
+			background: transparent
+			outline: none
+			
+	.slick-active
+		button 
+			background: $primary-color
+
+.slick-slider
+	position: static
+.galery-slider 
+	width: 100%
+	padding-left: 41vw
+	box-sizing: border-box
+.slider-item 
+	height: 38vw
+
+//end galery style
+
+//start video-section style
+.video-section 
+	background-color: $pink
+	padding-top: 140px 
+	padding-bottom: 80px
+	background-image: url('../img/7.png')
+	background-repeat: no-repeat
+	background-position: top left -1vw
+	background-size: 20.833vw
+	iframe 
+		width: 100% 
+		height: 565px
+//end video section style
+
+//start about section 
+.about
+	padding-top: 90px 
+	padding-bottom: 90px
+	background-image: url('../img/8.png')
+	background-repeat: no-repeat
+	background-position: right -0.2vw top
+	background-size: 20.833vw
+	.col-lg-6 
+		margin-top: 40px
+.about__text 
+	color: #3f4f68
+	font-size: 22px
+	max-width: 90%
+//end about section
+
+//start team style
+.team 
+	background: $blue
+	padding-top: 80px 
+	padding-bottom: 60px
+	.container-fluid 
+		display: flex
+		justify-content: space-between
+	.section-title
+		width: 200px
+.team__list 
+	width: 100%
+	padding-top: 40px
+	display: flex 
+	justify-content: space-between
+.team__item 
+	width: 20% 
+	text-align: center
+	font-size: 22px
+	color: #3f4f68
+	img 
+		max-width: 90%
+.team__member-name
+	margin-top: 20px
+//end team style
+
+.contact 
+	padding-top: 70px
+	padding-bottom: 48px
+	background-color: $pink
+	background-image: url('../img/9.png')
+	background-repeat: no-repeat
+	background-position: top right
+	min-height: 566px
+	background-size: 24.375vw
+	.section-title 
+		margin-bottom: 35px
+.contact-form 
+	width: 565px 
+	max-width: 100%
+	input,
+	textarea 
+		width: 100%
+		margin-bottom: 15px
+		padding: 0 20px
+		font-size: 20px
+		border: none 
+		outline: none
+	input:focus::placeholder,
+	textarea:focus::placeholder
+		color: transparent
+
+	input 
+		height: 50px
+
+	input[type="submit"]
+		margin-top: 0
+		width: 90px
+		color: #fff 
+		background: $primary-color
+	textarea 
+		margin-bottom: 8px
+		height: 185px
+		padding-top: 10px
+.contact__content 
+	display: flex
+	justify-content: space-between
+	align-items: flex-end
+	color: #3f4f68
+.hebrew-content
+	//text-align: right
+	.header
+		direction: rtl
+	.header__content
+		align-items: flex-start
+	.about 
+		direction: rtl
+		.col-lg-6 
+			
+	.galery
+		.container-fluid 
+			text-align: left
+	.team
+		direction: rtl
+		.container-fluid 
+	.contact
+		background-image: url('../img/9r.png') 
+		background-position: top left
+		background-size: 24.375vw
+		background-repeat: no-repeat
+		direction: rtl
+	.contact-form
+		input,
+		textarea
+			text-align: right
+
+
+
+
+@import "media"
+
+
+

@@ -1,0 +1,223 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.menu 
+		ul 
+			li 
+				margin-left: 60px
+				a 
+					font-size: 26px
+	.logo 
+		img 
+			width: 150px
+	.galery__title
+		font-size: 6vw
+	.video-section 
+		padding-top: 12vw 
+		padding-bottom: 8vw
+		iframe 
+			height: 40vw
+	.contact__content 
+		flex-direction: column
+		justify-content: flex-start
+		align-items: flex-start
+	.copy 
+		margin-top: 30px
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.galery__title
+		font-size: 6vw
+	.video-section 
+		padding-top: 12vw 
+		padding-bottom: 8vw
+		iframe 
+			height: 40vw
+	.about__text 
+		max-width: 100%
+	.team
+		.container-fluid 
+			flex-direction: column
+		.section-title 
+			width: auto
+	.hebrew-content
+		.team__list
+			order: 2
+		.section-title
+			order: 1
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.menu 
+		display: none
+	.header 
+		padding-top: 15px 
+		padding-bottom: 15px
+	.logo 
+		img 
+			width: 120px
+	.header 
+		background-image: none
+	.header__content
+		align-items: center
+	// 	flex-direction: row 
+	// 	align-items: center
+	.header__leng a
+		margin-bottom: 15px
+		width: 40px 
+		height: 40px
+		font-size: 16px
+	.menu__btn 
+		cursor: pointer
+	.menu__row 
+		width: 35px 
+		height: 3px 
+		background: $blue
+		margin-bottom: 6px
+		transition: all 0.3s
+	.galery .container-fluid
+		position: static
+		transform: translateX(0)
+	.galery-slider
+		padding-left: 0
+	.slider-item
+		height: 66vw
+	.galery__title 
+		padding-bottom: 2vw
+	.slick-dots
+		padding-top: 5vw
+	.slick-dots li
+		width: 20px 
+		height: 20px
+		margin: 0 5px
+		button 
+			width: 12px 
+			height: 12px
+	.menu__btn.active 
+		.menu__row:last-child 
+			display: none
+		.menu__row:nth-child(2)
+			transform: rotate(45deg)
+		.menu__row:first-child
+			transform: rotate(-45deg)
+			//margin-bottom: 0
+			position: relative 
+			top: 8px
+	.menu.active 
+		display: block 
+		position: absolute 
+		top: 102px 
+		left: 0 
+		width: 100% 
+		background: $pink
+		height: calc(100vh - 102px)
+		z-index: 999
+		ul 
+			flex-direction: column
+			min-height: 100%
+			padding-top: 10vw
+			li
+				margin-left: 9vw
+				margin-bottom: 5vw
+	.galery__title
+		font-size: 40px
+	.video-section 
+		padding-top: 20vw 
+		padding-bottom: 10vw
+		iframe 
+			height: 45vw
+	.video-section
+		background-size: 41vw
+		background-position: top left -8vw
+	.about 
+		padding-top: 10vw 
+		padding-bottom: 10vw
+		background-size: 41vw
+		.col-lg-6 
+			margin-top: 30px
+	.about__text 
+		font-size: 18px
+	.team__list 
+		flex-wrap: wrap
+		justify-content: center
+	.team__item
+		width: 33.3%
+		margin-bottom: 10vw
+	.team__member-name
+		margin-top: 10px
+	.team 
+		padding-top: 10vw 
+		padding-bottom: 2vw
+	.team__member-name
+		font-size: 14px
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.contact
+		background-size: 40vw
+	.hebrew-content 
+		.contact
+			background-size: 40vw
+		
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+
