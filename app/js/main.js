@@ -23,7 +23,8 @@ $('.slider').slick({
   slidesToShow: 1,
   dots: true,
   prevArrow: false, 
-  nextArrow: false
+  nextArrow: false,
+  autoplay: true
 })
 //end slider intit
 
